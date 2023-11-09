@@ -13,3 +13,4 @@ Route::post('/subjects/update/', [SubjectController::class, 'update']);
 
 Route::delete('/subjects/delte/{id}', [SubjectController::class,'destroy']) ->name('subject.destroy');
 
+Route::resource('/subjects', '\App\Http\Controllers\SubjectController');
