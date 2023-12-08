@@ -11,4 +11,9 @@ class Subjects extends Model
     protected $table = "subjects";
     public $timestamps = false;
     protected $fillable = ['sub_title', 'sub_room'];
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'user__subjects', 'subject_id', 'user_id');
+    }
 }

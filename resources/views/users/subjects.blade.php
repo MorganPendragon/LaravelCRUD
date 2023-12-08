@@ -25,6 +25,7 @@
         @endif
         <h1 class="mb-4">Subjects</h1>
         <a href="/subjects/create" class="btn btn-primary mb-3">Add Subject</a>
+        <a href="/users" class="btn btn-primary mb-3">User</a>
         <table class="table table-striped">
             <thead>
                 <tr>
