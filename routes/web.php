@@ -21,11 +21,11 @@ use App\Http\Controllers\UserController;
 // });
 
 Route::get('/', [SubjectController::class, 'index']);
-// Route::get('/subjects/create/', [SubjectController::class, 'create']);
-// Route::post('/subjects/add/', [SubjectController::class, 'store']);
+ Route::get('/subjects/create/', [SubjectController::class, 'create']);
+ Route::post('/subjects/add/', [SubjectController::class, 'store']);
 
-// Route::get('/subjects/edit/{id}', [SubjectController::class, 'edit']);
-// Route::post('/subjects/update/', [SubjectController::class, 'update']);
+ Route::get('/subjects/edit/{id}', [SubjectController::class, 'edit']);
+ Route::post('/subjects/update/', [SubjectController::class, 'update']);
 
 Route::delete('/subjects/delete/{id}', [SubjectController::class, 'destroy'])->name('subject.destroy');
 

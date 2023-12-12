@@ -16,7 +16,7 @@ class CreateUserSubjectsTable extends Migration
         Schema::create('user__subjects', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
-            $table->integer('subject_id');
+            $table->integer('subject_id')->unique();
         });
     }
 
